@@ -1,0 +1,34 @@
+header{
+    padding: 0 20px 0 10px;
+    borde
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+nav > ul > li{
+    display: inline-block;
+    padding: 0 10px;
+}
+nav > ul > li:hover{
+    cursor: pointer;
+
+}
+
+.wrapper{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.fa-mobile-alt{
+    margin: 0 0 0 auto;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    padding: 0 20px 0 0;
+}
