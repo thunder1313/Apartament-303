@@ -2,28 +2,31 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
     <title>Kołobrzeg</title>
-    <link rel="stylesheet" type="text/css" href="css/header&nav.css">
+
+    <link rel="stylesheet" href="css/header&nav.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="css/all.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    <header class="uppercase">
-        <div class="wrapper">
-            <img src="logo.jpg" alt="logo" id="logo">
-            <nav>
-                <ul>
-                    <li class="uppercase">home</li>
-                    <li class="uppercase">galeria</li>
-                    <li class="uppercase">cennik</li>
-                    <li class="uppercase">lokalizacja</li>
-                    <li class="uppercase">kontakt</li>
-                </ul>
-            </nav>
-            <i class="fas fa-mobile-alt"> +48 123 456 789</i>
-        </div>
+    <header>
+        <img src="logo.jpg" alt="logo" id="logo">
+        <nav>
+            <ul class="navigation">
+                <li class="navigation__item uppercase"><a href="index.html">home</a></li>
+                <li class="navigation__item uppercase"><a href="gallery.html">galeria</a></li>
+                <li class="navigation__item uppercase"><a href="price-list.html">cennik</a></li>
+                <li class="navigation__item uppercase"><a href="location.html">lokalizacja</a></li>
+                <li class="navigation__item uppercase"><a href="contact.html">kontakt</a></li>
+            </ul>
+        </nav>
+        <button class="button__call"><i class="fas fa-mobile-alt"> +48 123 456 789</i></button>
     </header>
 </body>
 </html>
