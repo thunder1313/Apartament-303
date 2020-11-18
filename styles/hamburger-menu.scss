@@ -68,12 +68,15 @@
     transform: translateX(-200px);
     display: none;
     z-index: 2;
+    align-items: center;
+    justify-content: center;
 }
 .sidebar__list{
     list-style: none;
     padding: 0;
     font-size: 20px;
     a{
+        padding: 5px;
         text-decoration: none;
         color: black;
     }
@@ -91,7 +94,7 @@
         display: inline-block;
     }
     .sidebar{
-        display: inline-block;
+        display: inline-flex;
     }
 }
 @media (max-width: 650px){
