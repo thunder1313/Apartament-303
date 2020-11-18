@@ -5,9 +5,16 @@ html, body {
   width: 100vw;
   height: 100vh;
   background-color: #F1F6FB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+main {
+  position: relative;
+  top: 100px;
 }
 /*# sourceMappingURL=style.css.map */

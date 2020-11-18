@@ -5,7 +5,13 @@ html,body{
     width: 100vw;
     height: 100vh;
     background-color: #F1F6FB;
+    box-sizing: border-box;
 }
 .uppercase{
     text-transform: uppercase;
+}
+
+main{
+    position: relative;
+    top: 100px;
 }

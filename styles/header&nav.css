@@ -1,9 +1,8 @@
 header {
   background-color: #F1F6FB;
   font-size: 15px;
-  padding: 0 20px 0 10px;
-  position: -webkit-sticky;
-  position: sticky;
+  width: 100vw;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,12 +10,22 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 #logo {
   width: 100px;
   height: 100px;
-  padding: 0 20px 0 0;
+  padding: 0 20px 0 20px;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.logo--active {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
 }
 
 .navigation {
@@ -47,5 +56,27 @@ header {
   padding: 10px;
   margin: 0 0 0 auto;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  #logo {
+    padding: 0 10px;
+  }
+  .button__call {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo--active {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
 }
 /*# sourceMappingURL=header&nav.css.map */
